@@ -1,3 +1,4 @@
-dist
+dist/*
+!dist/jquery-ui.min.js
 node_modules
 .sizecache.json

@@ -12,15 +12,16 @@ var
 		"jquery.ui.droppable.js",
 		"jquery.ui.resizable.js",
 		"jquery.ui.selectable.js",
-		"jquery.ui.sortable.js",
-		"jquery.ui.effect.js"
+		"jquery.ui.sortable.js"
+		// "jquery.ui.effect.js"
 	],
 
 	uiFiles = coreFiles.map(function( file ) {
 		return "ui/" + file;
-	}).concat( expandFiles( "ui/*.js" ).filter(function( file ) {
-		return coreFiles.indexOf( file.substring(3) ) === -1;
-	})),
+	}),
+	// .concat( expandFiles( "ui/*.js" ).filter(function( file ) {
+	// 	return coreFiles.indexOf( file.substring(3) ) === -1;
+	// })),
 
 	allI18nFiles = expandFiles( "ui/i18n/*.js" ),
 
